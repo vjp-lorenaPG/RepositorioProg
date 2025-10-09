@@ -18,7 +18,7 @@ public class T3E7 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        //Declaro las variables
         int diasemana;
         boolean laborable;
         boolean valido=true;//Para controlar si el numero es correcto
@@ -26,6 +26,7 @@ public class T3E7 {
         Scanner entrada = new Scanner (System.in);
         System.out.println("Introduzca un numero del uno al 7");
         diasemana = entrada.nextInt();
+        //Guardo el valor del ususario
         
         switch (diasemana) {
             case 1:
@@ -46,10 +47,10 @@ public class T3E7 {
             }
         if (valido){
             if (laborable == true){
-                    System.out.println ("El dia es laborable");
+                    System.out.println ("El dia es laborable");//Imprimo resultado laborable
                 }
                 if (laborable == false){
-                System.out.println("El dia es no laborable");
+                System.out.println("El dia es no laborable");//Imprimo resultado no laborable
                 }
             }
         }

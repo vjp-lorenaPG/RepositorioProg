@@ -19,18 +19,20 @@ public class T3E1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int numUsuario;
+        int numUsuario;//Declaro la variable para guardar el número del usuario.
         
         Scanner entrada = new Scanner (System.in);
         System.out.println("Por favor, introduzca el numero");
-        numUsuario = entrada.nextInt();
+        numUsuario = entrada.nextInt();//Registro el número del usuario en la variable.
         
-            if (numUsuario >0){
+            if (numUsuario > 0){
                     System.out.println("El numero es positivo");
-                    else if(numUsuario == 0);
-                    System.out.println("El numero es positivo");
-                else (numUsuario < 0);
-                    System.out.println ("El numero es negativo");
+                }   else if(numUsuario < 0){// Imprimo que el número es positivo si es mayor a 0.
+                    System.out.println("El numero es negativo");/* Imprimo que el número es negativo
+                    si es menor a 0.*/
+                }   else {
+                    System.out.println ("El numero es positivo");/*Imprimo que el número es negativo
+                    si fuera igual a cero.*/
              }
         
         

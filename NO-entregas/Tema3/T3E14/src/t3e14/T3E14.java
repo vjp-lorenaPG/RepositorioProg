@@ -16,11 +16,11 @@ public class T3E14 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int num = 2;
+        int num = 2;//Declaro la variable.
         
-        while (num<101){
-        System.out.println(num);
-        num+=2;}
+        while (num<101){//Decalro la condición.
+        System.out.println(num);//Imprimo el valor de "num".
+        num+=2;}//Sumo y modifico el valor de "num".
     }
     
 }

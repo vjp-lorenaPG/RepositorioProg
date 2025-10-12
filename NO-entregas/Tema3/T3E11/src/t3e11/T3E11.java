@@ -17,11 +17,11 @@ public class T3E11 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int num = 1;
+        int num = 1;//Declaro la variable.
         
-        while (num<=6){
-            System.out.println("Hola"+num);
-            num++; 
+        while (num<=6){//Declaro la condición de repetición.
+            System.out.println("Hola"+num);//Imprimo el texto con la variable "num".
+            num++; //Sumo uno a la variable "num".
             }
             
         }

@@ -19,13 +19,13 @@ public class T3E12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int num = 10;
+        int num = 10;//Declaro la variable
         
         do {
-            System.out.println(num);
-            num++;
-            num++;
-            }while (num <133);
+            System.out.println(num);//Imprimo la variable "num".
+            num++;//Sumo y modifico la variable "num" una unidad.
+            num++;//Sumo y modifico la variable "num" una unidad.
+            }while (num <133);//Declaro condición del bucle.
     }
     
 }

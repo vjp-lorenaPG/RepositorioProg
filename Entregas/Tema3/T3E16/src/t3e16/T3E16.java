@@ -17,21 +17,21 @@ public class T3E16 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int num, vueltas;
-        vueltas = 0;
-        num = 21;
+        int numFin = 160, vueltas = 0;
         //Declaro las variables que usaré después
         
         System.out.print("Los numeros impares existentes entre el numero 20 y el 160 son: " );
         //Imprimo el primer mensaje
         
-        do {
-            System.out.print( num + "-");
-            num+=2;//Sumo dos y modifico la variable para que sean impares.
-            vueltas++;//Registro las veces que se imprime un número.
-            } while (num < 160);//Se repite mientras que "num" sea menor a 160.
+        for (int i=20; i<numFin; i++){//Bucle mientras que i no sea igual que numFin
+            if (i%2!=0){
+                System.out.print( i + "-");
+                vueltas++;//Sumo la cantidad de veces que imprime números impares.
+            }
+        }
         System.out.println("\n La cantidad de numeros impares impresos han sido: " + vueltas);
-        }//Imprimo la cantidad de números que sea han impreso.
+        //Imprimo la cantidad de números que sea han impreso.
     }
+}
     
 

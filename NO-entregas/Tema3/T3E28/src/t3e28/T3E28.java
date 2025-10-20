@@ -20,12 +20,12 @@ public class T3E28 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        
+        //Declaro y aplico la fórmula.
         int aleatorio =(int) Math.floor((Math.random()*100+1));
         System.out.print("El numero " + aleatorio);
+        //Imprimo el número.
         
-        
-        if (aleatorio%2==0){
+        if (aleatorio%2==0){//Condición para par e impar.
             System.out.print(" es par ");
         }else {
             System.out.print(" es impar ");

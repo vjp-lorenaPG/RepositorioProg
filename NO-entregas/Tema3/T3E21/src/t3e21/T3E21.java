@@ -23,24 +23,25 @@ public class T3E21 {
         
         Scanner entrada = new Scanner (System.in);
         
-        //Entrada del valor de las variables.
-        do {
+        
+        do {//Bucle para pedir el valor de los numeros en caso de error.
             System.out.println ("Introduzca dos numeros para iniciar la division");
             num1 = entrada.nextInt();
             num2 = entrada.nextInt();
+            //Entrada del valor de las variables.
             try {//Control de excepciones.
                 resultado = num1 / num2;
                 error = false;
-            }catch (ArithmeticException e){
+            }catch (ArithmeticException e){//Capturo el error y aplico solución.
                 resultado = 0;
                 System.out.println ("Ha intentado dividir por cero");//Mensaje de error.
-                error = true;
-                entrada = new Scanner (System.in);
+                error = true;//Aplico condición de repecitión del bucle.
+                entrada = new Scanner (System.in);//Reinicio el escáner.
             }
-        }while (error ==true );
+        }while (error ==true );//Condición de repetición
         
         System.out.println ("El resultado de dividir " + num1 + "/" + num2 + " = " + resultado);
-        
+        //Imprimo resultado de la operación.
     }
     
 }

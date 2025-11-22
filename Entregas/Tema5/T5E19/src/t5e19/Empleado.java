@@ -15,7 +15,7 @@ package t5e19;
  * clase Test con un método que determine y muestre el sueldo bruto de cada
  * empleado.
  *
- * @author galin
+ * @author Lorena
  */
 public class Empleado {
     //Atributos comunes a la clase.
@@ -33,7 +33,7 @@ public class Empleado {
     //Constructor parametrizado
     public Empleado (String n,int numHoras, int t){
         nombre=n;
-        numHoras=numHoras;
+        this.numHoras=numHoras;
         tarifaHora=t;
     }
     //Set de nombre
@@ -70,8 +70,8 @@ public class Empleado {
     public void mostrarEmpleado (int salario){
         
         System.out.println("Nombre: " + nombre + "\n"
-        + "\n salario "+ numHoras + "\ntarifa: "+ tarifaHora + salario );
-        
+        + "Numero de horas trabajadas "+ numHoras + "\nTarifa: "+ tarifaHora + "\nSalario: " + salario );
+        System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-");
     }
     
     

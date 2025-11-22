@@ -75,9 +75,9 @@ public class T5E19 {
         //Calculo y muestro sin almacenar el salario.
         salario=calcularSalario(e1.getNumHoras(),e1.getTarifaHora());
         e1.mostrarEmpleado(salario);
-        calcularSalario(e2.getNumHoras(),e1.getTarifaHora());
+        salario=calcularSalario(e2.getNumHoras(),e2.getTarifaHora());
         e2.mostrarEmpleado(salario);
-        calcularSalario(e3.getNumHoras(),e1.getTarifaHora());
+        salario=calcularSalario(e3.getNumHoras(),e3.getTarifaHora());
         e3.mostrarEmpleado(salario);
     
     }

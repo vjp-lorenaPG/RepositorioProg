@@ -11,17 +11,21 @@ import java.util.ArrayList;
  * @author galin
  */
 public class Empresa {
-    // Atributos
+    //Atributos
     private String nombreEmpresa;
     private ArrayList<Empleado> empleados;
 
-    // Constructor
+    //Constructor
+    public Empresa() {
+        this.nombreEmpresa = "";
+        this.empleados = new ArrayList<>();
+    }
     public Empresa(String nombreEmpresa) {
         this.nombreEmpresa = nombreEmpresa;
         this.empleados = new ArrayList<>();
     }
 
-    // Getter
+    //Getter
     public String getNombreEmpresa() {
         return nombreEmpresa;
     }
@@ -30,7 +34,7 @@ public class Empresa {
         return empleados;
     }
 
-    // Método para añadir empleados
+    //Método para añadir empleados
     public void añadirEmpleado(Empleado e) {
         empleados.add(e);
     }

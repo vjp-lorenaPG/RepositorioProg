@@ -63,9 +63,6 @@ public class Alumno {
     
     }
     public void crearYRellenarAsignaturas() {
-
-        Scanner entrada = new Scanner(System.in);
-
         for (int i = 0; i < asignaturas.length; i++) {
 
             asignaturas[i] = new Asignatura(pedirNombreAsignatura(), pedirNotaAsignatura() );

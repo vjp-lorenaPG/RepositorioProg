@@ -7,8 +7,17 @@ package t10e15;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
+/**Realiza un programa en JAVA que esté formado por dos clases: 
+ * • Clase Empresa:
+ * • nombreEmpresa de tipo cadena. • Lista de empleados de tipo Empleados.
+ * • Clase Empleados: • nombreEmpleado de tipo cadena. • sueldo de tipo entero.
  *
+ * Además, crearás un menú que le permita al usuario las siguientes opciones: 
+ * 1. Añadir empresas junto a sus empleados a una lista. 
+ * 2. Mostrar las empresas de la lista junto a sus empleados 
+ * 3. Mostrar los empleados cuyo nombre contenga la letra ‘A’ 
+ * 4. Mostrar todos los empleados ordenados por el sueldo que cobran 
+ * 5. Salir del programa.
  * @author galin
  */
 public class T10E15 {
@@ -48,13 +57,13 @@ public class T10E15 {
                 String nombreEmpleado = pedirNombre("Nombre del empleado " + contador + ":");
                 int sueldo =pedirSueldo();
                 empresa.añadirEmpleado(new Empleado(nombreEmpleado, sueldo));
-                System.out.println("¿Desea añadir más empleados? (Si/No)");
+                System.out.println("Quiere añadir mas empleados (Si/No)");
                 continuarEmpleado = pedirSeguir();
                 contador++;
 
             } while (continuarEmpleado.equalsIgnoreCase("si"));
             empresas.add(empresa);
-            System.out.println("¿Desea añadir más empresas? (Si/No)");
+            System.out.println("Quiere añadir ms empresas (Si/No)");
             continuarEmpresa =pedirSeguir();
 
         } while (continuarEmpresa.equalsIgnoreCase("si"));
@@ -128,13 +137,12 @@ public class T10E15 {
 
         int opcion;
         do {
-            System.out.println("""
-                Pulse 1 para introducir empresas y sus empleados.
-                Pulse 2 para mostrar empresas y sus empleados.
-                Pulse 3 para mostrar empleados con la letra A.
-                Pulse 4 para mostrar empleados ordenados por sueldo.
-                Pulse 5 para salir.
-                """);
+            System.out.println("Pulse 1 para introducir empresas y sus empleados. "
+                +"\nPulse 2 para mostrar empresas y sus empleados."
+                +"\nPulse 3 para mostrar empleados con la letra A."
+                +"\nPulse 4 para mostrar empleados ordenados por sueldo."
+                +"\nPulse 5 para salir.");
+                
             Scanner entrada = new Scanner(System.in);
             opcion = entrada.nextInt();
             switch (opcion) {

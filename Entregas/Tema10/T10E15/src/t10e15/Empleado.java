@@ -12,14 +12,19 @@ public class Empleado {
     // Atributos
     private String nombreEmpleado;
     private int sueldo;
-
-    // Constructor
+    
+    //Constructores
+    public Empleado (){
+        this.nombreEmpleado = "";
+        this.sueldo = 0;
+    }
+    
     public Empleado(String nombreEmpleado, int sueldo) {
-        this.nombreEmpleado = nombreEmpleado;
-        this.sueldo = sueldo;
+        this.nombreEmpleado =nombreEmpleado;
+        this.sueldo =sueldo;
     }
 
-    // Getters
+    //Getters
     public String getNombreEmpleado() {
         return nombreEmpleado;
     }
@@ -28,7 +33,7 @@ public class Empleado {
         return sueldo;
     }
 
-    // ToString
+    //ToString
     @Override
     public String toString() {
         return nombreEmpleado + " - " + sueldo;

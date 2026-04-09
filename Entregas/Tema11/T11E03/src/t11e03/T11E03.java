@@ -167,10 +167,11 @@ public class T11E03 {
     //Método para buscar la poscion del autobus con mas conductores.
     public static int buscarPoscionConMasConductores (Autobus[] autobuses){
         int posicionMaxConductores=-1;
-        int maxConductores=0;
+        int maxConductores=-1;
         for (int i = 0; i <autobuses.length; i++) {// Bucle
             if(autobuses[i]!=null){  //Condición para controlar si es null o no  
                 if (maxConductores<autobuses[i].contarConductores()) {//Condición para guardar el máximo
+                    maxConductores=autobuses[i].contarConductores();
                     posicionMaxConductores=i;
                 }
             }
